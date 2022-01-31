@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import stickScroll from '../util';
+// import stickScroll from '../util';
 const Menu = () => {
   useEffect(() => {
-    window.removeEventListener('scroll', stickScroll);
-    document.querySelector('.headerBox').style.top = '0';
+    // window.removeEventListener('scroll', stickScroll);
+    // document.querySelector('.headerBox').style.top = '0';
   }, []);
   return (
     <Container fluid className="menuBox">
