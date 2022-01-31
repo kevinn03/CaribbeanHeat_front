@@ -2,10 +2,7 @@ import React, { useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 // import stickScroll from '../util';
 const Menu = () => {
-  useEffect(() => {
-    // window.removeEventListener('scroll', stickScroll);
-    // document.querySelector('.headerBox').style.top = '0';
-  }, []);
+  useEffect(() => {}, []);
   return (
     <Container fluid className="menuBox">
       <Row className="justify-content-start">

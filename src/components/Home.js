@@ -3,10 +3,8 @@ import React, { useEffect } from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
 const Home = () => {
   useEffect(() => {
-    // document.body.style.backgroundImage =
-    //   'url(https://i.imgur.com/2Ouwyp3.png)';
-    // document.querySelector('.headerBox').style.top = '49%';
-    // window.addEventListener('scroll', stickScroll);
+    // document.querySelector('.homeBackground').backgroundImage =
+    //   'url(https://rvca738f6h5tbwmj3mxylox3-wpengine.netdna-ssl.com/wp-content/uploads/2020/03/GI-1168880617-caribbean-food.jpg)';
   }, []);
   return (
     <div>
