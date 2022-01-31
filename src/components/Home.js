@@ -14,7 +14,7 @@ const Home = () => {
       <Row className="justify-content-center">
         {/* <Col md="1"></Col> */}
         <Col md="4">
-          <img src="https://www.beaches.com/blog/content/images/2020/03/Jamaican-Jerk-Chicken.jpg"></img>
+          <img src="https://media.istockphoto.com/photos/beach-dining-in-barbados-picture-id1139761423?k=20&m=1139761423&s=612x612&w=0&h=hV_fcGFOb31zXwYcuU1kMi-gNa-4U9dzhmDaPWn6zGQ="></img>
         </Col>
         <Col md="3">
           <div className="story">
@@ -47,7 +47,7 @@ const Home = () => {
       </Row>
       <Row className="justify-content-end">
         <Col md="4">
-          <img src="https://media.istockphoto.com/photos/beach-dining-in-barbados-picture-id1139761423?k=20&m=1139761423&s=612x612&w=0&h=hV_fcGFOb31zXwYcuU1kMi-gNa-4U9dzhmDaPWn6zGQ="></img>
+          <img src="https://www.beaches.com/blog/content/images/2020/03/Jamaican-Jerk-Chicken.jpg"></img>
         </Col>
         <Col md="3">
           <div className="story">
