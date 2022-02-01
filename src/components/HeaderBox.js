@@ -4,16 +4,16 @@ import { Navbar, Container, Nav, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 const HeaderBox = () => {
   return (
-    <Row className="headerBox justify-content-around align-items-center">
+    <Row className="header-box justify-content-around align-items-center w-100">
       <Col md="4">
         <Navbar.Brand>
           <Link to="/">
-            <span id="headerTitle">Caribbean Heat</span>
+            <span className="header-box__title">Caribbean Heat</span>
           </Link>
         </Navbar.Brand>
       </Col>
       <Col md="4">
-        <Navbar className="testy" collapseOnSelect expand="sm">
+        <Navbar className="header-box__nav" collapseOnSelect expand="sm">
           <Container>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav testing">

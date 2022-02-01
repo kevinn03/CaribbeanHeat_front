@@ -1,10 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-// import stickScroll from '../util';
+
 const Menu = () => {
-  useEffect(() => {}, []);
   return (
-    <Container fluid className="menuBox">
+    <Container fluid className="menu-box">
       <Row className="justify-content-start">
         <Col className="testing">
           <h2>Hellooo</h2>

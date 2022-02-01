@@ -7,7 +7,7 @@ import Menu from './components/Menu';
 import Home from './components/Home';
 function App() {
   return (
-    <div className="app container-lg">
+    <div className="app container-fluid">
       <Router>
         <HeaderBox></HeaderBox>
 
