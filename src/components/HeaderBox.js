@@ -24,7 +24,9 @@ const HeaderBox = () => {
                   </Link>
                 </Nav.Link>
                 <Nav.Link>
-                  <span>Contact</span>
+                  <Link to="/contact">
+                    <span>Contact</span>
+                  </Link>
                 </Nav.Link>
                 <Nav.Link>
                   <span>Reserve</span>
