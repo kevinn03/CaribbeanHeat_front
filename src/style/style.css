@@ -150,7 +150,7 @@ html {
 .item-card {
   font-size: 0.6em;
   color: #002f75;
-  border: 1px solid black;
+  border: 1px solid #002f75;
 }
 /* div {
   border: 2px solid green;
@@ -168,12 +168,12 @@ html {
 
 .flex-child {
   flex: 1;
-  border: 2px solid black;
+  border: 2px solid #002f75;
 }
 .flex-child2 {
   flex: 4;
 
-  border: 2px solid black;
+  border: 2px solid #002f75;
 }
 .flex-child2 img {
   width: 100%;
