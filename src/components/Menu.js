@@ -9,8 +9,6 @@ const Menu = ({ menu }) => {
     setFilterMenu(menuArr.filter((item) => item.category === category));
   };
 
-  console.log('filter');
-  console.log(filterMenu);
   return (
     <div className="flex-container menu-box">
       <MenuList menu={menu} getMenuItems={menuItems}></MenuList>
