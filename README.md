@@ -1,5 +1,7 @@
 # Caribbean Heat restaurant frontend
- React Bootstrap
+http://caribbeanheat.herokuapp.com/
+
+Website built with: Node.js Express, MongoDB, React, Bootstrap
 
 # Getting Started with Create React App
 
