@@ -28,9 +28,6 @@ const HeaderBox = () => {
                     <span>Contact</span>
                   </Link>
                 </Nav.Link>
-                <Nav.Link>
-                  <span>Reserve</span>
-                </Nav.Link>
 
                 <Nav.Link>
                   <span>Cart</span>

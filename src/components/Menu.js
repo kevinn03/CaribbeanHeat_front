@@ -1,125 +1,23 @@
-import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import React, { useState } from 'react';
 
-const Menu = () => {
+import MenuList from './MenuList';
+import MenuDisplay from './MenuDisplay';
+const Menu = ({ menu }) => {
+  const [filterMenu, setFilterMenu] = useState(menu);
+
+  const menuItems = (menuArr, category) => {
+    setFilterMenu(menuArr.filter((item) => item.category === category));
+  };
+
+  console.log('filter');
+  console.log(filterMenu);
   return (
-    <Container fluid className="menu-box">
-      <Row className="justify-content-start">
-        <Col className="testing">
-          <h2>Hellooo</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-        </Col>
-        <Col>
-          <h2>Hellooo</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-        </Col>
-        <Col>
-          <h2>Hellooo</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-        </Col>
-      </Row>
-      <Row className="justify-content-start">
-        <Col>
-          <h2>Hellooo</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-        </Col>
-        <Col>
-          <h2>Hellooo</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-        </Col>
-        <Col>
-          <h2>Hellooo</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-        </Col>
-      </Row>
-      <Row className="justify-content-start">
-        <Col>
-          <h2>Hellooo</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-        </Col>
-        <Col>
-          <h2>Hellooo</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-        </Col>
-        <Col>
-          <h2>Hellooo</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-        </Col>
-      </Row>
-      <Row className="justify-content-start">
-        <Col>
-          <h2>Hellooo</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-        </Col>
-        <Col>
-          <h2>Hellooo</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-        </Col>
-        <Col>
-          <h2>Hellooo</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-        </Col>
-      </Row>
-      <Row className="justify-content-md-start">
-        <Col>
-          <h2>Hellooo</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-        </Col>
-      </Row>
-      <Row className="justify-content-md-start">
-        <Col>
-          <h2>Hellooo</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-        </Col>
-      </Row>
-      <Row className="justify-content-md-start">
-        <Col>
-          <h2>Hellooo</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-        </Col>
-      </Row>
-      <Row className="justify-content-md-start">
-        <Col>
-          <h2>Hellooo</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-        </Col>
-      </Row>
-      <Row className="justify-content-md-start">
-        <Col>
-          <h2>Hellooo</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-        </Col>
-      </Row>
-    </Container>
+    <div className="flex-container menu-box">
+      <MenuList menu={menu} getMenuItems={menuItems}></MenuList>
+      <div className="flex-child2 flex-container flex-wrap">
+        <MenuDisplay categoryItems={filterMenu}></MenuDisplay>
+      </div>
+    </div>
   );
 };
 
