@@ -151,9 +151,9 @@ html {
   font-size: 0.6em;
   color: #002f75;
 }
-div {
+/* div {
   border: 2px solid green;
-}
+} */
 .testing {
   height: 100px;
 }
