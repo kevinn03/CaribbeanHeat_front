@@ -1,5 +1,5 @@
 # Caribbean Heat restaurant frontend
-Node.js Express React Mongo Bootstrap
+ React Bootstrap
 
 # Getting Started with Create React App
 
