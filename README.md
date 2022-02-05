@@ -1,3 +1,6 @@
+# Caribbean Heat restaurant frontend
+Node.js Express React Mongo Bootstrap
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
