@@ -21,6 +21,7 @@ html {
 .w-25 {
   width: 25%;
 }
+
 .h-100 {
   height: 100%;
 }
@@ -158,7 +159,11 @@ html {
 }
 
 .item-card__info {
+<<<<<<< HEAD
   border-top: 3px solid #002f75;
+=======
+  border-top: 2px solid #002f75;
+>>>>>>> 041a20f717a3a2669b4b88aa5b5212bdb06fde25
 }
 /* div {
   border: 2px solid green;
