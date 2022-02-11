@@ -12,7 +12,7 @@ const Menu = ({ menu }) => {
   return (
     <div className="flex-container menu-box">
       <MenuList menu={menu} getMenuItems={menuItems}></MenuList>
-      <div className="flex-child2 flex-container flex-wrap">
+      <div className="h-100 flex-child2 flex-container flex-wrap">
         <MenuDisplay categoryItems={filterMenu}></MenuDisplay>
       </div>
     </div>

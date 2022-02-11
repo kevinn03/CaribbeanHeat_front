@@ -16,20 +16,22 @@ const MenuCard = ({ item }) => {
       <div>
         <img src={item.image}></img>
       </div>
-      <div className="flex-container justify-content-around">
-        <span>{item.title}</span>
-        <span>{`$${item.price}`}</span>
-      </div>
-      <div className="text-center">
-        <form onSubmit={addItem}>
-          <input
-            className="w-25"
-            type="number"
-            value={quantity}
-            onChange={handleQuantityChange}
-          />
-          <button type="submit">Add</button>
-        </form>
+      <div className="item-card__info">
+        <div className="flex-container justify-content-around">
+          <span>{item.title}</span>
+          <span>{`$${item.price}`}</span>
+        </div>
+        <div className="text-center">
+          <form onSubmit={addItem}>
+            <input
+              className="w-25 text-center"
+              type="number"
+              value={quantity}
+              onChange={handleQuantityChange}
+            />
+            <button type="submit">Add</button>
+          </form>
+        </div>
       </div>
     </div>
   );
