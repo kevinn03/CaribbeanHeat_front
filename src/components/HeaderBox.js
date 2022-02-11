@@ -18,21 +18,20 @@ const HeaderBox = () => {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav testing">
               <Nav className="me-auto">
-                <div className="header-box__nav-link">
+                <Nav.Link>
                   <Link to="/menu">
                     <span>Menu</span>
                   </Link>
-                </div>
-                <div className="header-box__nav-link">
+                </Nav.Link>
+                <Nav.Link>
                   <Link to="/contact">
                     <span>Contact</span>
                   </Link>
-                </div>
-                <div className="header-box__nav-link">
-                  <Link to="/cart">
-                    <span>Cart</span>
-                  </Link>
-                </div>
+                </Nav.Link>
+
+                <Nav.Link>
+                  <span>Cart</span>
+                </Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
