@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './style/style.css';
-import menuServices from './services/menuAPI';
+
 import HeaderBox from './components/HeaderBox';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
@@ -8,55 +8,50 @@ import Menu from './components/Menu';
 import Home from './components/Home';
 import Contact from './components/Contact';
 function App() {
-  const [menu, setMenu] = useState([]);
-  useEffect(async () => {
-    const result = await menuServices.getItems();
-    setMenu(result);
-  }, []);
   return (
     <div className="app h-100 w-100">
       <Router>
         <HeaderBox></HeaderBox>
 
         <Switch>
-          <Route path="/menu/house">
-            <Menu menu={menu} />
+          <Route key="menu-house" path="/menu/house">
+            <Menu category={'House Specials'} />
           </Route>
-          <Route path="/menu/soup">
-            <Menu menu={menu} />
+          <Route key="menu-soup" path="/menu/soup">
+            <Menu category={'Soup'} />
           </Route>
-          <Route path="/menu/deepfried">
-            <Menu menu={menu} />
+          <Route key="menu-deep" path="/menu/deep-fried">
+            <Menu category={'Deep Fried'} />
           </Route>
-          <Route path="/menu/bbqroast">
-            <Menu menu={menu} />
+          <Route key="menu-bbq" path="/menu/bbq-roast">
+            <Menu category={'BBQ Roast'} />
           </Route>
-          <Route path="/menu/sweetsour">
-            <Menu menu={menu} />
+          <Route key="menu-sweetsour" path="/menu/sweet-sour">
+            <Menu category={'Sweet & Sour'} />
           </Route>
-          <Route path="/menu/sizzling">
-            <Menu menu={menu} />
+          <Route key="menu-hotsiz" path="/menu/sizzling">
+            <Menu category={'Hot Sizzling Dishes'} />
           </Route>
-          <Route path="/menu/friedrice">
-            <Menu menu={menu} />
+          <Route key="menu-friedrice" path="/menu/fried-rice">
+            <Menu category={'Fried Rice'} />
           </Route>
-          <Route path="/menu/chowmein">
-            <Menu menu={menu} />
+          <Route key="menu-chowmein" path="/menu/chow-mein">
+            <Menu category={'Chow Mein'} />
           </Route>
-          <Route path="/menu/lomein">
-            <Menu menu={menu} />
+          <Route key="menu-lomein" path="/menu/lo-mein">
+            <Menu category={'Lo Mein'} />
           </Route>
-          <Route path="/menu/fooyung">
-            <Menu menu={menu} />
+          <Route key="menu-fooyung" path="/menu/foo-yung">
+            <Menu category={'Egg Fu Yung'} />
           </Route>
-          <Route path="/menu/vegetable-mixed">
-            <Menu menu={menu} />
+          <Route key="menu-mixedveg" path="/menu/vegetable-mixed">
+            <Menu category={'Vegetable Mixed'} />
           </Route>
-          <Route path="/menu/bevarages">
-            <Menu menu={menu} />
+          <Route key="menu-beverages" path="/menu/bevarages">
+            <Menu category={'Bevearages'} />
           </Route>
-          <Route path="/menu">
-            <Menu menu={menu} />
+          <Route key="menu" path="/menu">
+            <Menu category={'all'} />
           </Route>
           <Route path="/contact">
             <Contact />
