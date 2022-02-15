@@ -24,12 +24,14 @@ const MenuCard = ({ item }) => {
         <div className="text-center">
           <form onSubmit={addItem}>
             <input
-              className="w-25 text-center"
+              className="item-card__input w-25 text-center"
               type="number"
               value={quantity}
               onChange={handleQuantityChange}
             />
-            <button type="submit">Add</button>
+            <button className="item-card__btn" type="submit">
+              Add
+            </button>
           </form>
         </div>
       </div>
