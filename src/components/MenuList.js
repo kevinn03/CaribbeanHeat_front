@@ -1,5 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
+const categorySelected = () => {
+  return null;
+};
+
+categorySelected();
 const MenuList = () => {
   return (
     <div className="menu-list flex-child">

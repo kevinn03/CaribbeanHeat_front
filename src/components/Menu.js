@@ -18,9 +18,7 @@ const Menu = ({ category }) => {
     <div className="flex-container menu-box">
       <MenuList></MenuList>
 
-      <div className="flex-child2 flex-container flex-wrap h-100">
-        <MenuDisplay categoryItems={menu}></MenuDisplay>
-      </div>
+      <MenuDisplay categoryItems={menu}></MenuDisplay>
     </div>
   );
 };

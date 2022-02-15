@@ -13,10 +13,13 @@ const HeaderBox = () => {
         </Navbar.Brand>
       </Col>
       <Col md="4">
-        <Navbar className="header-box__nav" collapseOnSelect expand="sm">
+        <Navbar collapseOnSelect expand="sm">
           <Container>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav testing">
+            <Navbar.Collapse
+              id="responsive-navbar-nav testing"
+              className="header-box__nav"
+            >
               <Nav className="me-auto">
                 <div className="header-box__nav-link">
                   <Link to="/menu">
@@ -31,6 +34,11 @@ const HeaderBox = () => {
                 <div className="header-box__nav-link">
                   <Link to="/">
                     <span>Cart</span>
+                  </Link>
+                </div>
+                <div className="header-box__nav-link">
+                  <Link to="/">
+                    <span>Admin</span>
                   </Link>
                 </div>
               </Nav>

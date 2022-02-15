@@ -48,6 +48,10 @@ html {
   margin: 0;
   font: 700 18px Larish Neue, serif;
 }
+
+.header-box__nav {
+  z-index: 999;
+}
 .header-box__title {
   font-size: 1.3em;
   color: #002f75;
@@ -136,7 +140,9 @@ html {
 /* Menu */
 
 .menu-box {
-  margin-top: 25%;
+  position: absolute;
+  top: 40%;
+
   box-sizing: border-box;
 }
 .menu-list {
@@ -150,16 +156,28 @@ html {
   font-size: 0.6em;
   font-weight: 600;
 }
+.menu-list span:hover {
+  color: green;
+}
 
 .item-card {
   font-size: 0.6em;
-  color: black;
-  border: 2px solid #002f75;
+  color: white;
+
   margin: 0.1%;
 }
 
 .item-card__info {
-  border-top: 2px solid #002f75;
+  border: 1px solid black;
+  background-color: #002f75;
+}
+.item-card__input {
+  border: 1px solid black;
+}
+
+.item-card__btn {
+  background-color: #002f75;
+  color: white;
 }
 /* div {
   border: 2px solid green;
