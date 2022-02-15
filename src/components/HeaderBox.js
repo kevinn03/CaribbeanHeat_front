@@ -5,15 +5,15 @@ import { Link } from 'react-router-dom';
 const HeaderBox = () => {
   return (
     <Row className="header-box justify-content-around align-items-center w-100">
-      <Col md="4">
+      <Col md="12" lg="4">
         <Navbar.Brand>
           <Link to="/">
             <span className="header-box__title">Caribbean Heat</span>
           </Link>
         </Navbar.Brand>
       </Col>
-      <Col md="4">
-        <Navbar collapseOnSelect expand="md">
+      <Col lg="4">
+        <Navbar collapseOnSelect expand="lg">
           <Container>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse
