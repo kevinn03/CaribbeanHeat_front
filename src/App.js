@@ -47,8 +47,8 @@ function App() {
           <Route key="menu-mixedveg" path="/menu/vegetable-mixed">
             <Menu category={'Vegetable Mixed'} />
           </Route>
-          <Route key="menu-beverages" path="/menu/bevarages">
-            <Menu category={'Bevearages'} />
+          <Route key="menu-beverages" path="/menu/beverages">
+            <Menu category={'Beverages'} />
           </Route>
           <Route key="menu" path="/menu">
             <Menu category={'all'} />

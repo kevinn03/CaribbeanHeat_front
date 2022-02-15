@@ -1,12 +1,13 @@
 import React from 'react';
 import MenuCard from './MenuCard';
+import { Row } from 'react-bootstrap';
 const MenuDisplay = ({ categoryItems }) => {
   return (
-    <div className="flex-child2 flex-container flex-wrap h-100">
+    <Row className="menu-display__row border-box ">
       {categoryItems.map((item) => (
         <MenuCard key={item.id} item={item}></MenuCard>
       ))}
-    </div>
+    </Row>
   );
 };
 

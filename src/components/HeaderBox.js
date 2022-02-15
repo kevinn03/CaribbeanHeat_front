@@ -13,7 +13,7 @@ const HeaderBox = () => {
         </Navbar.Brand>
       </Col>
       <Col md="4">
-        <Navbar collapseOnSelect expand="sm">
+        <Navbar collapseOnSelect expand="md">
           <Container>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse
