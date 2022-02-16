@@ -20,10 +20,10 @@ const Home = () => {
             <Col sm={12} md={4} lg={6}>
               <div className="home-background__story w-100">
                 <p className="home-background__story__title">
-                  AUTHENTIC AND MODERN CARIBBEAN CUISINE
+                  AUTHENTIC AND MODERN CHINESE CARIBBEAN CUISINE
                 </p>
                 <p className="home-background__story__about">
-                  The best authentic caribbean food in Toronto
+                  The best authentic chinese caribbean food in Toronto
                 </p>
               </div>
             </Col>
