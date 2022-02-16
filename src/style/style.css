@@ -14,6 +14,10 @@ html {
 .border-box {
   box-sizing: border-box;
 }
+
+.display-inline__block {
+  display: inline-block;
+}
 .w-100 {
   width: 100%;
 }
@@ -197,9 +201,6 @@ html {
   background-color: #002f75;
   color: white;
 }
-/* div {
-  border: 2px solid green;
-} */
 
 /* CART */
 
@@ -207,39 +208,72 @@ html {
   position: absolute;
   top: 20%;
   justify-content: center;
+  font-family: Larish Neue, serif;
+}
+.cart h2 {
+  font-weight: 600;
 }
 .cart-container {
   margin-top: 5%;
 }
 .cart-display {
   flex-direction: row-reverse;
-  width: 80%;
-
-  border: 2px solid green;
+  width: 70%;
+  min-width: 460px;
 }
 
 .cart-display__left {
-  flex: 1 0 70%;
+  flex: 1 0 65%;
   flex-direction: column;
-
-  /* border: 2px solid green; */
+  height: 100%;
 }
 .cart-display__right {
-  flex: 1 0 30%;
+  height: 30%;
+  flex: 1 0 24%;
+  min-width: 150px;
   flex-direction: column;
-
   row-gap: 15%;
-  border: 2px solid green;
+
+  margin-left: 3%;
+  margin-right: 3%;
+  justify-content: flex-start;
 }
 .cart-card {
   font-size: 0.6em;
-  border: 1px solid grey;
+  border: 1px solid lightgrey;
+  min-height: 15%;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.cart-card__left {
+  margin: 0;
+  padding: 0;
+}
+.cart-card__right {
+  margin: 0;
+  padding: 0;
+}
+
+.cart-icon {
+  height: 100%;
+  width: 25%;
+  max-width: 110px;
+  max-height: 90px;
+  min-width: 100px;
+  min-height: 86px;
+}
+
+.cart-card__btn {
+  margin: 2%;
 }
 .course-cart {
-  font-size: 0.7em;
+  margin-bottom: 3%;
+  font-size: 0.6em;
 }
-.subtotal {
-  font-size: 0.7em;
+.total {
+  font-size: 0.6em;
+  font-weight: 400;
 }
 .price {
   font-size: 1.5em;
@@ -248,6 +282,12 @@ html {
 .checkout {
   width: 100%;
   max-width: 500px;
+  max-height: 100px;
+  border: none;
+  background-color: #002f75;
+  color: white;
+  font-size: 0.6em;
+  height: 40%;
 }
 .testing {
   height: 100px;
@@ -265,3 +305,12 @@ html {
 .quantity {
   margin-right: 10px;
 }
+
+.input-quantity {
+  width: 35px;
+  text-align: center;
+}
+/* 
+div {
+  border: 2px solid green;
+} */
