@@ -151,19 +151,20 @@ html {
 .menu-box {
   position: absolute;
   top: 40%;
+  font-family: Larish Neue, serif;
 
   box-sizing: border-box;
 }
 .menu-list {
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
 .menu-list__cat {
-  border-bottom: 2px solid black;
-  background-color: #002f75;
+  border-bottom: 1px solid lightgrey;
+  /* background-color: #002f75; */
 }
 .menu-list span {
-  color: white;
+  color: #002f75;
   font-size: 0.6em;
   font-weight: 600;
 }
@@ -189,7 +190,7 @@ html {
 }
 
 .item-card__info {
-  border: 1px solid black;
+  border: 1px solid lightgrey;
   color: black;
   /* background-color: #002f75; */
 }
