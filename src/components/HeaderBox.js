@@ -32,7 +32,7 @@ const HeaderBox = () => {
                   </Link>
                 </div>
                 <div className="header-box__nav-link">
-                  <Link to="/">
+                  <Link to="/cart">
                     <span>Cart</span>
                   </Link>
                 </div>

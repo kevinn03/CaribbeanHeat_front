@@ -27,6 +27,9 @@ html {
 .h-100 {
   height: 100%;
 }
+.h-50 {
+  height: 50%;
+}
 .text-center {
   text-align: center;
 }
@@ -151,10 +154,6 @@ html {
   border: 2px solid black;
 }
 
-.menu-display {
-}
-.menu-display__row {
-}
 .menu-list__cat {
   border-bottom: 2px solid black;
   background-color: #002f75;
@@ -201,13 +200,64 @@ html {
 /* div {
   border: 2px solid green;
 } */
+
+/* CART */
+
+.cart {
+  position: absolute;
+  top: 20%;
+  justify-content: center;
+}
+.cart-container {
+  margin-top: 5%;
+}
+.cart-display {
+  flex-direction: row-reverse;
+  width: 80%;
+
+  border: 2px solid green;
+}
+
+.cart-display__left {
+  flex: 1 0 70%;
+  flex-direction: column;
+
+  /* border: 2px solid green; */
+}
+.cart-display__right {
+  flex: 1 0 30%;
+  flex-direction: column;
+
+  row-gap: 15%;
+  border: 2px solid green;
+}
+.cart-card {
+  font-size: 0.6em;
+  border: 1px solid grey;
+}
+.course-cart {
+  font-size: 0.7em;
+}
+.subtotal {
+  font-size: 0.7em;
+}
+.price {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+.checkout {
+  width: 100%;
+  max-width: 500px;
+}
 .testing {
   height: 100px;
 }
 .column-height {
   margin-top: 10%;
 }
-
+.display-flex {
+  display: flex;
+}
 .flex-wrap {
   flex-wrap: wrap;
 }

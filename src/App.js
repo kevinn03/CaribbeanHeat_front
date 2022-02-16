@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Menu from './components/Menu';
 import Home from './components/Home';
 import Contact from './components/Contact';
+import Cart from './components/Cart';
 function App() {
   return (
     <div className="app h-100 w-100">
@@ -55,6 +56,9 @@ function App() {
           </Route>
           <Route path="/contact">
             <Contact />
+          </Route>
+          <Route path="/cart">
+            <Cart />
           </Route>
           <Route path="/">
             <Home />
