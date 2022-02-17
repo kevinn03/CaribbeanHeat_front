@@ -1,18 +1,33 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './style/style.css';
 
 import HeaderBox from './components/HeaderBox';
-
+import menuApi from './services/menuAPI';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Menu from './components/Menu';
 import Home from './components/Home';
 import Contact from './components/Contact';
 import Cart from './components/Cart';
 function App() {
+  const [cart, setCart] = useState([]);
+
+  useEffect(async () => {
+    const tempCart = [...cart];
+    for (const [key, value] of Object.entries(sessionStorage)) {
+      const item = await menuApi.getItem(key);
+
+      if (Object.keys(item)) {
+        tempCart.push({ ...item, quantity: value });
+        setCart(tempCart);
+      }
+    }
+  }, []);
+  console.log('this is from app');
+  console.log(cart);
   return (
     <div className="app h-100 w-100">
       <Router>
-        <HeaderBox></HeaderBox>
+        <HeaderBox cartNumber={cart.length}></HeaderBox>
 
         <Switch>
           <Route key="menu-house" path="/menu/house">
@@ -58,7 +73,7 @@ function App() {
             <Contact />
           </Route>
           <Route path="/cart">
-            <Cart />
+            <Cart cart={cart} />
           </Route>
           <Route path="/">
             <Home />
