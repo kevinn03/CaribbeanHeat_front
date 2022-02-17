@@ -12,22 +12,22 @@ function App() {
   const [cart, setCart] = useState([]);
 
   useEffect(async () => {
-    const tempCart = [...cart];
+    const tempCart = [];
+
     for (const [key, value] of Object.entries(sessionStorage)) {
       const item = await menuApi.getItem(key);
 
       if (Object.keys(item)) {
         tempCart.push({ ...item, quantity: value });
-        setCart(tempCart);
       }
     }
+    setCart(tempCart);
   }, []);
-  console.log('this is from app');
-  console.log(cart);
+
   return (
     <div className="app h-100 w-100">
       <Router>
-        <HeaderBox cartNumber={cart.length}></HeaderBox>
+        <HeaderBox cart={cart}></HeaderBox>
 
         <Switch>
           <Route key="menu-house" path="/menu/house">

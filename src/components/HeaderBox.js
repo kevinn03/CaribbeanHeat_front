@@ -2,7 +2,7 @@ import React from 'react';
 import '../style/style.css';
 import { Navbar, Container, Nav, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-const HeaderBox = () => {
+const HeaderBox = ({ cart }) => {
   return (
     <Row className="header-box justify-content-around align-items-center w-100">
       <Col md="12" lg="4">
@@ -33,7 +33,7 @@ const HeaderBox = () => {
                 </div>
                 <div className="header-box__nav-link">
                   <Link to="/cart">
-                    <span>Cart</span>
+                    <span>Cart {cart.length}</span>
                   </Link>
                 </div>
                 <div className="header-box__nav-link">

@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Row, Col } from 'react-bootstrap';
 const CartCard = ({ item, subtotal }) => {
+  const [qnty, setqnty] = useState(item.quantity);
+  const quantityChange = (event) => {
+    setqnty(event.target.value);
+  };
   return (
     <Row className="cart-card">
       <Col className="cart-card__left" xs="12" sm="12" md="8" lg="7">
@@ -22,7 +26,8 @@ const CartCard = ({ item, subtotal }) => {
           <input
             className="input-quantity"
             type="number"
-            value={item.quantity}
+            value={qnty}
+            onChange={quantityChange}
           ></input>
           <button>Update</button>
           <button>Remove</button>
