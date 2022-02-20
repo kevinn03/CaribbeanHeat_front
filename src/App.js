@@ -38,17 +38,6 @@ function App() {
     }
   };
   const updateCartItem = (item, quantity) => {
-    // check if item is already in cart
-    console.log(item.title);
-    console.log(quantity);
-    // const findItem = cart.find((ele) => ele.title === item.title);
-    // if (findItem) {
-    //   const tempCart = cart.filter((ele) => ele.title !== findItem.title);
-    //   findItem.quantity = quantity;
-    //   tempCart.push(findItem);
-    //   setCart(tempCart);
-    // }
-
     const tempArr = cart.map((ele) => {
       if (ele.title === item.title) {
         ele.quantity = quantity;

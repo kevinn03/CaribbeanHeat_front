@@ -24,7 +24,7 @@ const MenuCard = ({ item, addItem }) => {
           <div className="text-center">
             <span>{item.title}</span>
             <span> </span>
-            <span className>{`$${item.price}`}</span>
+            <span>{`$${item.price}`}</span>
           </div>
           <div className="text-center">
             <form onSubmit={addItem}>
