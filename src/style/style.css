@@ -220,7 +220,7 @@ html {
 }
 .cart-display {
   flex-direction: row-reverse;
-  width: 70%;
+  width: 60%;
   min-width: 460px;
 }
 
@@ -231,7 +231,7 @@ html {
 }
 .cart-display__right {
   height: 30%;
-  flex: 1 0 24%;
+  flex: 1 0 29%;
   min-width: 190px;
   flex-direction: column;
   row-gap: 15%;
@@ -264,7 +264,20 @@ html {
   min-width: 100px;
   min-height: 86px;
 }
+.shopping-icon {
+  height: 35px;
+  width: 35px;
+  position: relative;
+  bottom: 25%;
+}
 
+#shopping-counter {
+  position: relative;
+  bottom: 54%;
+  right: 45%;
+  color: green;
+  border-radius: 100%;
+}
 .cart-card__btn {
   margin: 2%;
 }
@@ -314,7 +327,7 @@ html {
   width: 45px;
   text-align: center;
 }
-/* 
-div {
+
+/* div {
   border: 2px solid green;
 } */
