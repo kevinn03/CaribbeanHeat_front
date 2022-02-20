@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
 import { Col } from 'react-bootstrap';
-const MenuCard = ({ item }) => {
+const MenuCard = ({ item, addItem }) => {
   const [quantity, setQuantity] = useState(1);
-  const addItem = (event) => {
-    event.preventDefault();
 
-    setQuantity(1);
-  };
   const handleQuantityChange = (event) => {
     setQuantity(event.target.value);
+  };
+
+  const addMenuItem = (event) => {
+    event.preventDefault();
+    addItem(item, quantity);
+
+    setQuantity(1);
   };
 
   return (
@@ -30,8 +33,13 @@ const MenuCard = ({ item }) => {
                 type="number"
                 value={quantity}
                 onChange={handleQuantityChange}
+                min="1"
               />
-              <button className="item-card__btn" type="submit">
+              <button
+                onClick={addMenuItem}
+                className="item-card__btn"
+                type="submit"
+              >
                 Add
               </button>
             </form>
