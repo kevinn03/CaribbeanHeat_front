@@ -1,6 +1,7 @@
 import React from 'react';
 import CartCard from './CartCard';
-const CartDisplay = ({ cart, updateCartItem, removeCartItem }) => {
+import orderAPI from '../services/orderAPI';
+const CartDisplay = ({ cart, updateCartItem, removeCartItem, orderItem }) => {
   const totalItems = () => {
     let sum = 0;
     cart.forEach((item) => (sum += Number(item.quantity)));
@@ -25,7 +26,23 @@ const CartDisplay = ({ cart, updateCartItem, removeCartItem }) => {
   };
 
   const totalPrice = () => subPrice() + taxPrice(subPrice());
+  const orderCheckout = async (event) => {
+    event.preventDefault;
+    if (cart.length > 0) {
+      const orderMessage = document.querySelector('.cart-message');
+      const tempObject = {};
+      tempObject.price = { total: totalPrice(), tax: taxPrice(subPrice()) };
+      tempObject.items = [...cart];
 
+      await orderAPI.create(tempObject);
+      orderMessage.classList.toggle('d-none');
+
+      setTimeout(() => {
+        orderMessage.classList.toggle('d-none');
+      }, 3000);
+      orderItem();
+    }
+  };
   return (
     <div className="cart-display h-100  display-flex flex-wrap">
       <div className="cart-display__right display-flex">
@@ -45,7 +62,9 @@ const CartDisplay = ({ cart, updateCartItem, removeCartItem }) => {
           </div>
         </div>
         <div className="h-100 w-100">
-          <button className="checkout">Order</button>
+          <button onClick={orderCheckout} className="checkout">
+            Order
+          </button>
         </div>
       </div>
 

@@ -53,6 +53,10 @@ function App() {
     setCart(tempCart);
   };
 
+  const orderItem = () => {
+    setCart([]);
+  };
+
   return (
     <div className="app h-100 w-100">
       <Router>
@@ -106,6 +110,7 @@ function App() {
               updateCartItem={updateCartItem}
               removeCartItem={removeCartItem}
               cart={cart}
+              orderItem={orderItem}
             />
           </Route>
           <Route path="/">

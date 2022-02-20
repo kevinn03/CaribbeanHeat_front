@@ -19,6 +19,9 @@ html {
 .display-inline__block {
   display: inline-block;
 }
+.d-none {
+  display: none;
+}
 .w-100 {
   width: 100%;
 }
