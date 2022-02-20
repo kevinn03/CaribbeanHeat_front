@@ -1,6 +1,12 @@
 import React from 'react';
 import CartCard from './CartCard';
-const CartDisplay = ({ cart }) => {
+const CartDisplay = ({ cart, updateCartItem, removeCartItem }) => {
+  const totalItems = () => {
+    let sum = 0;
+    cart.forEach((item) => (sum += Number(item.quantity)));
+    return sum;
+  };
+
   const subtotal = (item) => {
     return Number(item.price) * Number(item.quantity);
   };
@@ -44,10 +50,16 @@ const CartDisplay = ({ cart }) => {
       </div>
 
       <div className="cart-display__left display-flex">
-        <div className="course-cart">{cart.length} items in Cart</div>
+        <div className="course-cart">{totalItems()} items in the Cart</div>
 
         {cart.map((item, index) => (
-          <CartCard key={index} subtotal={subtotal} item={item} />
+          <CartCard
+            updateCartItem={updateCartItem}
+            removeCartItem={removeCartItem}
+            key={index}
+            subtotal={subtotal}
+            item={item}
+          />
         ))}
       </div>
     </div>

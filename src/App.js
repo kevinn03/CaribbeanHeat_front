@@ -28,7 +28,6 @@ function App() {
     if (findItem) {
       const tempCart = cart.filter((ele) => ele.title !== findItem.title);
 
-      console.log(tempCart);
       let tempQuantity = Number(findItem.quantity);
       tempQuantity += Number(quantity);
       findItem.quantity = tempQuantity;
@@ -37,6 +36,32 @@ function App() {
     } else {
       setCart(cart.concat({ ...item, quantity: quantity }));
     }
+  };
+  const updateCartItem = (item, quantity) => {
+    // check if item is already in cart
+    console.log(item.title);
+    console.log(quantity);
+    // const findItem = cart.find((ele) => ele.title === item.title);
+    // if (findItem) {
+    //   const tempCart = cart.filter((ele) => ele.title !== findItem.title);
+    //   findItem.quantity = quantity;
+    //   tempCart.push(findItem);
+    //   setCart(tempCart);
+    // }
+
+    const tempArr = cart.map((ele) => {
+      if (ele.title === item.title) {
+        ele.quantity = quantity;
+      }
+      return ele;
+    });
+
+    setCart(tempArr);
+  };
+
+  const removeCartItem = (item) => {
+    const tempCart = cart.filter((ele) => ele.title !== item.title);
+    setCart(tempCart);
   };
 
   return (
@@ -88,7 +113,11 @@ function App() {
             <Contact />
           </Route>
           <Route path="/cart">
-            <Cart cart={cart} />
+            <Cart
+              updateCartItem={updateCartItem}
+              removeCartItem={removeCartItem}
+              cart={cart}
+            />
           </Route>
           <Route path="/">
             <Home />

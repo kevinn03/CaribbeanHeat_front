@@ -1,10 +1,19 @@
 import React, { useState } from 'react';
 import { Row, Col } from 'react-bootstrap';
-const CartCard = ({ item, subtotal }) => {
-  const [qnty, setqnty] = useState(item.quantity);
+const CartCard = ({ item, subtotal, updateCartItem, removeCartItem }) => {
+  const [quantity, setquantity] = useState(item.quantity);
   const quantityChange = (event) => {
-    setqnty(event.target.value);
+    setquantity(event.target.value);
   };
+  const updateCart = () => {
+    updateCartItem(item, quantity);
+  };
+
+  const removeItem = (event) => {
+    event.preventDefault;
+    removeCartItem(item);
+  };
+
   return (
     <Row className="cart-card">
       <Col className="cart-card__left" xs="12" sm="12" md="8" lg="7">
@@ -23,15 +32,17 @@ const CartCard = ({ item, subtotal }) => {
       </Col>
       <Col className="cart-card__right">
         <div className="cart-card__btn">
-          <input
-            className="input-quantity"
-            type="number"
-            value={qnty}
-            onChange={quantityChange}
-            min="1"
-          ></input>
-          <button>Update</button>
-          <button>Remove</button>
+          <form onSubmit={updateCart}>
+            <input
+              className="input-quantity"
+              type="number"
+              value={quantity}
+              onChange={quantityChange}
+              min="1"
+            ></input>
+            <button type="submit">Update</button>
+            <button onClick={removeItem}>Remove</button>
+          </form>
         </div>
       </Col>
     </Row>
