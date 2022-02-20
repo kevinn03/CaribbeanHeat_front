@@ -30,11 +30,11 @@ const CartDisplay = ({ cart }) => {
           <div className="total">+</div>
           <div>
             <span className="total">
-              tax: ${taxPrice(subPrice()).toFixed(2)}
+              Tax: ${taxPrice(subPrice()).toFixed(2)}
             </span>
           </div>
 
-          <div className="total">
+          <div className="total total-price__container">
             Total: <span className="price">${totalPrice().toFixed(2)}</span>
           </div>
         </div>
@@ -44,7 +44,7 @@ const CartDisplay = ({ cart }) => {
       </div>
 
       <div className="cart-display__left display-flex">
-        <div className="course-cart">{cart.length} Courses in Cart</div>
+        <div className="course-cart">{cart.length} items in Cart</div>
 
         {cart.map((item, index) => (
           <CartCard key={index} subtotal={subtotal} item={item} />

@@ -35,6 +35,10 @@ html {
 .h-50 {
   height: 50%;
 }
+
+.font-weight-600 {
+  font-weight: 600;
+}
 .text-center {
   text-align: center;
 }
@@ -182,7 +186,7 @@ html {
 }
 .item-card img {
   width: 100%;
-  max-height: 270px;
+  max-height: 250px;
 }
 
 .item-card__div {
@@ -278,7 +282,7 @@ html {
 }
 
 #shopping-counter {
-  color: green;
+  color: red;
 }
 .cart-card__btn {
   margin: 2%;
@@ -290,6 +294,10 @@ html {
 .total {
   font-size: 0.6em;
   font-weight: 400;
+}
+
+.total-price__container {
+  border-top: 1px solid lightgrey;
 }
 .subtotal {
   font-weight: 600;
