@@ -3,7 +3,7 @@ import menuServices from '../services/menuAPI';
 import MenuList from './MenuList';
 import MenuDisplay from './MenuDisplay';
 import { Container, Col, Row } from 'react-bootstrap';
-const Menu = ({ category }) => {
+const Menu = ({ category, addItem }) => {
   window.scrollTo(0, 0);
   const [menu, setMenu] = useState([]);
 
@@ -23,7 +23,7 @@ const Menu = ({ category }) => {
           <MenuList></MenuList>
         </Col>
         <Col className=" w-100 border-box menu-display">
-          <MenuDisplay categoryItems={menu}></MenuDisplay>
+          <MenuDisplay addItem={addItem} categoryItems={menu}></MenuDisplay>
         </Col>
       </Row>
     </Container>

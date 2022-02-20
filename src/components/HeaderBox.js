@@ -33,12 +33,14 @@ const HeaderBox = ({ cart }) => {
                 </div>
                 <div className="header-box__nav-link">
                   <Link to="/cart">
-                    <img
-                      className="shopping-icon"
-                      src="https://icons-for-free.com/iconfiles/png/512/cart-131964784999299812.png"
-                      alt="cart"
-                    ></img>
-                    <span id="shopping-counter">{cart.length}</span>
+                    <div className="shopping-container">
+                      <img
+                        className="shopping-icon"
+                        src="https://icons-for-free.com/iconfiles/png/512/cart-131964784999299812.png"
+                        alt="cart"
+                      ></img>
+                      <span id="shopping-counter">{cart.length}</span>
+                    </div>
                   </Link>
                 </div>
                 <div className="header-box__nav-link">

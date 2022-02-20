@@ -267,19 +267,18 @@ html {
   min-width: 100px;
   min-height: 86px;
 }
+.shopping-container {
+  position: relative;
+  bottom: 25%;
+  min-width: 45px;
+}
 .shopping-icon {
   height: 35px;
   width: 35px;
-  position: relative;
-  bottom: 25%;
 }
 
 #shopping-counter {
-  position: relative;
-  bottom: 54%;
-  right: 45%;
   color: green;
-  border-radius: 100%;
 }
 .cart-card__btn {
   margin: 2%;

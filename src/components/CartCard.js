@@ -9,7 +9,7 @@ const CartCard = ({ item, subtotal }) => {
     <Row className="cart-card">
       <Col className="cart-card__left" xs="12" sm="12" md="8" lg="7">
         <Row className="h-100 border-box">
-          <Col xs="3" sm="3" md="5" lg="4" xl="3" xxl="3">
+          <Col xs="3" sm="3" md="5" lg="4" xl="4" xxl="3">
             <img className="cart-icon" src={item.image} />
           </Col>
           <Col>
@@ -28,6 +28,7 @@ const CartCard = ({ item, subtotal }) => {
             type="number"
             value={qnty}
             onChange={quantityChange}
+            min="1"
           ></input>
           <button>Update</button>
           <button>Remove</button>
