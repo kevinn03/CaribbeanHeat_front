@@ -16,8 +16,18 @@ const CartDisplay = ({ cart }) => {
   return (
     <div className="cart-display h-100  display-flex flex-wrap">
       <div className="cart-display__right display-flex">
-        <div className="total">
-          Total: <span className="price">${totalPrice()}</span>
+        <div>
+          <div>
+            <span className="total">Subtotal: ${totalPrice()}</span>
+          </div>
+          <div className="total">+</div>
+          <div>
+            <span className="total">tax: ${totalPrice() * 1.13}</span>
+          </div>
+
+          <div className="total">
+            Total: <span className="price">${totalPrice()}</span>
+          </div>
         </div>
         <div className="h-100 w-100">
           <button className="checkout">Checkout</button>

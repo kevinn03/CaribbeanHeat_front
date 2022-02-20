@@ -61,6 +61,7 @@ html {
 
 .header-box__nav {
   z-index: 999;
+  background-color: white;
 }
 .header-box__title {
   font-size: 1.3em;
@@ -230,8 +231,10 @@ html {
   height: 100%;
 }
 .cart-display__right {
-  height: 30%;
+  height: 50%;
   flex: 1 0 29%;
+  min-height: 420px;
+  max-height: 420px;
   min-width: 190px;
   flex-direction: column;
   row-gap: 15%;

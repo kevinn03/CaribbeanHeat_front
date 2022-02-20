@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Row, Col, Container } from 'react-bootstrap';
 const Home = () => {
+  window.scrollTo(0, 0);
   return (
     <div className="home w-100 h-100">
       <div className="home-background w-100">

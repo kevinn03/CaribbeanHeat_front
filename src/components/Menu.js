@@ -4,6 +4,7 @@ import MenuList from './MenuList';
 import MenuDisplay from './MenuDisplay';
 import { Container, Col, Row } from 'react-bootstrap';
 const Menu = ({ category }) => {
+  window.scrollTo(0, 0);
   const [menu, setMenu] = useState([]);
 
   useEffect(async () => {

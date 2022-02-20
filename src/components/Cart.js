@@ -1,6 +1,7 @@
 import React from 'react';
 import CartDisplay from './CartDisplay';
 const Cart = ({ cart }) => {
+  window.scrollTo(0, 0);
   return (
     <div className="cart w-100 h-100">
       <h2 className="text-center">Shopping Cart</h2>
