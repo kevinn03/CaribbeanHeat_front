@@ -24,12 +24,12 @@ Caribbean Heat is a restaurant website that allows users to browse the menu and 
 
 
 ### This to do
--Add error handling
--Add testing
--Restructure subroutes
--Add Admin page
--Add statistics
--style
+* Add error handling
+* Add testing
+* Restructure subroutes
+* Add Admin page
+* Add statistics
+* style
 
 
 
