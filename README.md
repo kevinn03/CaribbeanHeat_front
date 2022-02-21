@@ -6,10 +6,7 @@ Caribbean Heat is a restaurant website that allows users to browse the menu and 
 
 
 ## Instructions
-* clone this repository
-* run ```npm install``` inside root directory and frontend directory
-* run ```npm run dev``` in root directory
-* navigate to ```localhost:3003``` in your browser
+* follow the instructions in the caribbean heat backend respository [Here!] (https://github.com/kevinn03/CaribbeanHeat_back/blob/master/README.md)
 
 ## Technologies
 ### Frontend
