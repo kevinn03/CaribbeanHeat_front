@@ -6,7 +6,8 @@ Caribbean Heat is a restaurant website that allows users to browse the menu and 
 
 
 ## Instructions
-* follow the instructions in the caribbean heat backend respository [Here!] (https://github.com/kevinn03/CaribbeanHeat_back/blob/master/README.md)
+* follow the instructions in the caribbean heat backend respository 
+* [Here!](https://github.com/kevinn03/CaribbeanHeat_back/blob/master/README.md)
 
 ## Technologies
 ### Frontend
