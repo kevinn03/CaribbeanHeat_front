@@ -4,7 +4,7 @@ Explore [CaribbeanHeat](https://caribbeanheat.herokuapp.com/)
 
 Caribbean Heat is a restaurant website that allows users to browse the menu and make take out orders online. This website is my modern version take of the original https://caribbeanheat.ca
 
-<img width="800" alt="caribbean heat pic" src="https://i.imgur.com/8YNkm5K.png">
+
 
 ## Instructions
 * follow the instructions in the caribbean heat backend respository 
