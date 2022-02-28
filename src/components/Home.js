@@ -46,7 +46,7 @@ const Home = () => {
             <Col sm={12} md={8} lg={6}>
               <img
                 className="home-img"
-                src="https://yasogrill.com/wp-content/uploads/2021/03/favorite-ingredients-in-jamaican-food.png"
+                src="https://media-cdn.tripadvisor.com/media/photo-s/1b/06/61/00/langouste.jpg"
               ></img>
             </Col>
           </Row>
